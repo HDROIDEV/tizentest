@@ -1,0 +1,23 @@
+{
+    "name": "htesttizenbrew",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": { "build": "webpack --watch" },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.11",
+        "babel-loader": "^8.1.0",
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "file-loader": "^6.0.0"
+    },
+    "dependencies": {
+        "tizen-tv-webapis": "^1.0.0",
+        "tizen-common-web": "^1.0.0"
+    }
+}
+
+
