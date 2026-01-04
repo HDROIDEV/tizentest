@@ -1,9 +1,9 @@
 {
-  "name": "my-tizenbrew-test-app",   // Can be anything, or @yourusername/name if publishing to npm later
+  "name": "my-tizenbrew-test-app",
   "version": "1.0.0",
   "description": "Simple test app for TizenBrew",
-  "packageType": "app",              // THIS IS REQUIRED – tells TizenBrew it's a standalone app
-  "appName": "My Test App",          // Friendly name shown in TizenBrew
-  "appPath": "app/index.html",       // Path from repo root to your main HTML file
-  "keys": ["Enter", "Return"]        // Optional: keys your app wants to use (like for remote buttons)
+  "packageType": "app",
+  "appName": "My Test App",
+  "appPath": "app/index.html",
+  "keys": ["Enter", "Return"]
 }
