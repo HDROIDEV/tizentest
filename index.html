@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Test TizenBrew App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <style>
+        body {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 200px;
+}
+
+    </style>
 </head>
 <body>
     <h1>Hello TizenBrew Test!</h1>
     <p>Press Enter on remote for alert.</p>
 </body>
+<script>
+    window.onload = () => {
+    console.log('Test app loaded');
+
+    try {
+        tizen.tvinputdevice.registerKey('Enter');
+    } catch (e) {}
+
+    document.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+            alert('Enter pressed! Working on TV.');
+        }
+    });
+};    
+</script>
 </html>
