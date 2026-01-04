@@ -1,23 +1,9 @@
 {
-    "name": "htesttizenbrew",
-    "version": "1.0.0",
-    "description": "",
-    "main": "",
-    "scripts": { "build": "webpack --watch" },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.11",
-        "babel-loader": "^8.1.0",
-        "@babel/core": "^7.10.2",
-        "@babel/preset-env": "^7.10.2",
-        "file-loader": "^6.0.0"
-    },
-    "dependencies": {
-        "tizen-tv-webapis": "^1.0.0",
-        "tizen-common-web": "^1.0.0"
-    }
+  "name": "my-tizenbrew-test-app",   // Can be anything, or @yourusername/name if publishing to npm later
+  "version": "1.0.0",
+  "description": "Simple test app for TizenBrew",
+  "packageType": "app",              // THIS IS REQUIRED – tells TizenBrew it's a standalone app
+  "appName": "My Test App",          // Friendly name shown in TizenBrew
+  "appPath": "app/index.html",       // Path from repo root to your main HTML file
+  "keys": ["Enter", "Return"]        // Optional: keys your app wants to use (like for remote buttons)
 }
-
-
